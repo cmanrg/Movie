@@ -1,15 +1,53 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
+# Built artifacts
 /build
-/captures
+/*/build
+*.apk
+*.aar
+*.ap_
+*.dex
+*.class
+
+# IDE - Android Studio & IntelliJ
+.idea
+*.iml
+*.iws
+.project
+.classpath
+.settings
+.factorypath
+.navigation/
+captures/
 .externalNativeBuild
 .cxx
+/google-services.json
+
+# Gradle
+.gradle/
+build/
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+# It's usually better to keep the wrapper jar, but some prefer to ignore it.
+# Standard Android templates keep it. I'll comment out the ignore for the jar.
+#!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
 local.properties
+
+# Log files
+*.log
+
+# Keystores (Importante para seguridad)
+*.jks
+*.keystore
+*.p12
+*.key
+*.pub
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Testing
+/screenshots
+/test-results
